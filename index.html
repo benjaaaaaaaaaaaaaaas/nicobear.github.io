@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mi Tienda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner principal -->
+    <section class="banner">
+        <h2>¡Explora nuestras colecciones!</h2>
+        <button onclick="window.location.href='productos.html'">Ver Productos</button>
+    </section>
+
+    <!-- Carrusel con URLs externas de imágenes -->
+    <section class="carrusel-container">
+        <div class="carrusel">
+            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+
+            <!-- Las imágenes del carrusel -->
+            <div class="carrusel-images">
+                <img src="https://bearinbcn.com/wp-content/uploads/2024/02/Bear.png" alt="Banner 1" class="slide">
+                <img src="https://bearinbcn.com/wp-content/uploads/2024/02/chubby.png" alt="Banner 2" class="slide">
+                <img src="https://bearinbcn.com/wp-content/uploads/2024/02/polar_bear.png" alt="Banner 3" class="slide">
+                <img src="https://i.pinimg.com/474x/a6/b7/c1/a6b7c13127f5d2b5b7d1d99f38b48d9b.jpg" alt="Banner 3" class="slide">
+                <img src="https://bearinbcn.com/wp-content/uploads/2024/02/tipos-de-osos-gays.jpg" alt="Banner 3" class="slide">
+            </div>
+
+            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/funciones.js" defer></script>
+</body>
+</html>
